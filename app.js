@@ -48,7 +48,7 @@ app.post("/", async (req, res) => {
 
       // Send reply back
       await axios.post(
-        `https://graph.facebook.com/v21.0/${value.metadata.phone_number_id}/messages`,
+        `https://graph.facebook.com/v22.0/${value.metadata.phone_number_id}/messages`,
         {
           messaging_product: "whatsapp",
           to: from,
